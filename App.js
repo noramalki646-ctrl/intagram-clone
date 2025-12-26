@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { LogBox, StyleSheet } from "react-native";
 import AuthNavigation from "./src/navigation/AuthNavigation";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import * as SplashScreen from "expo-splash-screen";

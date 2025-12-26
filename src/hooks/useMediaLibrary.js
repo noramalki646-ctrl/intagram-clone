@@ -4,14 +4,17 @@ import * as MediaLibrary from "expo-media-library";
 const useMediaLibrary = (selectedAlbum) => {
   const [images, setImages] = useState([]);
   const [videos, setVideos] = useState([]);
-  const [permissionGranted, setPermissionGranted] = useState(false);
   const [permissionResponse, requestPermission] = MediaLibrary.usePermissions();
 
   useEffect(() => {
-    if (permissionResponse?.status === "granted") {
-      setPermissionGranted(true);
+    if (!permissionResponse) return;
+
+    if (permissionResponse.status === "undetermined") {
+      requestPermission();
     }
   }, [permissionResponse]);
+
+  const permissionGranted = permissionResponse?.status === "granted";
 
   useEffect(() => {
     const getPhotos = async () => {
