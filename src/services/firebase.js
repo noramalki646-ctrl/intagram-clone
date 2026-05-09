@@ -4,12 +4,13 @@ import { initializeAuth, getReactNativePersistence } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC61M-mcCdlkudNOvqtpMNO6XU28Ds3Tng",
-  authDomain: "instagram-clone-app-3f538.firebaseapp.com",
-  projectId: "instagram-clone-app-3f538",
-  storageBucket: "instagram-clone-app-3f538.appspot.com",
-  messagingSenderId: "923663435657",
-  appId: "1:923663435657:web:55648541fad8fbcfd30358",
+  apiKey: "AIzaSyD6w3pJpblRnZ9G6PtSwwiDF5eC34mqN_o",
+  authDomain: "instagram-clone-app-37e95.firebaseapp.com",
+  projectId: "instagram-clone-app-37e95",
+  storageBucket: "instagram-clone-app-37e95.firebasestorage.app",
+  messagingSenderId: "826458309440",
+  appId: "1:826458309440:web:e307a800ac0c176b9d70a5",
+  measurementId: "G-BKPKHS0108"
 };
 
 const app = initializeApp(firebaseConfig);
