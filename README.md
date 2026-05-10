@@ -36,7 +36,8 @@ While the front-end is fully functional and allows interaction with the app simi
 
 - Expo.
 - React Native.
-- Firebase (authentication, data base and cloud storage).
+- Firebase (authentication, data base ).
+- cloudinary storage
 
 ## Download the App for Android devices
 
